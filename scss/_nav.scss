@@ -1,3 +1,62 @@
+header {
+	position: relative;
+	.nav-logo {
+		cursor: auto;
+		&:hover {
+			background-color: white;
+		}
+	}
+	button {
+		z-index: 1;
+		color: $cubaFontColor;
+		background-color: white;
+    	border: none;
+	}
+	li {
+		cursor: pointer;
+		font-size: 2em;
+		a {
+			color: $cubaFontColor;
+		}
+		&:hover {
+			background-color: $cubaBlue;
+			a {
+				color: white;
+			}
+		}
+	}
+}
+.menu-toggle {
+	position: absolute;
+	right: 1em;
+	font-size: 2em;
+}
+.language-toggle {
+	position: absolute;
+	right: 5em;
+    top: .8em;
+    font-size: 1em;
+}
+.language-flags {
+	display: none;
+}
 img {
+	width: 50%;
+}
+
+@media only screen and (min-width : 768px) {
+	nav {
+	text-align: center;
+	border-top: 3px solid $cubaBlue;
+	height: 70px;
+		li {
+			height: 70px;
+			&:hover {
+				background-color: $cubaBlue;
+			}
+		}
+	}
+	img {
 	width: 100%;
+	}
 }
