@@ -15,11 +15,16 @@ header {
 	li {
 		cursor: pointer;
 		font-size: 2em;
+		border-bottom: 1px solid $cubaGrey;
 		a {
 			color: $cubaFontColor;
 		}
+		&:first-child {
+			border-bottom: none;
+		}
 		&:hover {
 			background-color: $cubaBlue;
+			border-bottom: 1px solid white;
 			a {
 				color: white;
 			}

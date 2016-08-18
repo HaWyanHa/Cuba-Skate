@@ -17,11 +17,15 @@ header {
     border: none; }
   header li {
     cursor: pointer;
-    font-size: 2em; }
+    font-size: 2em;
+    border-bottom: 1px solid #D9DADB; }
     header li a {
       color: #000; }
+    header li:first-child {
+      border-bottom: none; }
     header li:hover {
-      background-color: #435DA9; }
+      background-color: #435DA9;
+      border-bottom: 1px solid white; }
       header li:hover a {
         color: white; }
 
