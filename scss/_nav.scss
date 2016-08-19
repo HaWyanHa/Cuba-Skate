@@ -1,4 +1,5 @@
 header {
+	border-top: 5px solid $cubaBlue;
 	position: relative;
 	.nav-logo {
 		cursor: auto;
@@ -16,11 +17,12 @@ header {
 		cursor: pointer;
 		font-size: 2em;
 		border-bottom: 1px solid $cubaGrey;
+		padding-top: .5em;
+		padding-bottom: .5em;
 		a {
 			color: $cubaFontColor;
-		}
-		&:first-child {
-			border-bottom: none;
+			width: 100%;
+			display: inline-block;
 		}
 		&:hover {
 			background-color: $cubaBlue;
@@ -31,6 +33,19 @@ header {
 		}
 	}
 }
+.selected {
+	background-color: $cubaBlue;
+	a {
+		color: white;
+	}
+}
+.show-menu {
+	>ul {
+		display: none;
+	}
+}
+
+
 .menu-toggle {
 	position: absolute;
 	right: 1em;

@@ -9,8 +9,5 @@
 	    this.showMenu = true;
     }
 
-    function SelectedToggle(){
-    	this.selectedToggle = true;
-    }
 
 })();
