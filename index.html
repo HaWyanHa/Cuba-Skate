@@ -6,19 +6,21 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<header>
-		<button class="menu-toggle">
+	<header class="container-fluid" ng-controller="MenuController as mc">
+		<button class="menu-toggle" ng-click='mc.showMenu = !mc.showMenu'>
 			&#9776;
 		</button>
 		<button class="language-toggle">
 			idioma &#9660;
 		</button>
-		<nav class="container-fluid">
-			<ul class="row">
-				<li class="col-sm-3 nav-logo">
-					<img src="images/nav/logo.png">
-				</li>
-				<li class="col-sm-1 col-sm-offset-2">
+		<div class="row">
+			<div class="col-sm-3 nav-logo">
+				<img src="images/nav/logo.png">
+			</div>
+		</div>
+		<nav ng-class="{'row': true, 'show-menu': mc.showMenu }">
+			<ul>
+				<li ng-class="{'col-sm-1' : true, 'col-sm-offset-7' : true, 'selected': true}">
 					<a ui-sref="home">Home</a>
 				</li>
 				<li class="col-sm-1">
@@ -52,5 +54,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/menu.controller.js"></script>
 </body>
 </html>
