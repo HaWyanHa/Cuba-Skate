@@ -60,14 +60,13 @@ header {
 .language-flags {
 	display: none;
 }
-img {
+.navlogo {
 	width: 50%;
 }
 
 @media only screen and (min-width : 768px) {
 	nav {
 	text-align: center;
-	border-top: 3px solid $cubaBlue;
 	height: 70px;
 		li {
 			height: 70px;
@@ -78,5 +77,8 @@ img {
 	}
 	img {
 	width: 100%;
+	}
+	.language-flags {
+		display: inline-block;
 	}
 }
