@@ -17,7 +17,19 @@
 		 	.state("news", {
 		 		url:"/news",
 		 		templateUrl: "html/news.html"
-		 	});
+		 	})
+		 	.state("team", {
+		 		url:"/team",
+		 		templateUrl: "html/team.html"
+		 	})
+		 	.state("contact", {
+		 		url:"/contact",
+		 		templateUrl: "html/contact.html"
+		 	})
+		 	.state("donate", {
+		 		url:"/donate",
+		 		templateUrl: "html/donate.html"
+		 	})
 	}
 
 	

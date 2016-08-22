@@ -15,6 +15,9 @@ ul {
   ul a:hover {
     text-decoration: none; }
 
+img {
+  width: 100%; }
+
 header {
   border-top: 5px solid #435DA9;
   position: relative; }
@@ -65,13 +68,12 @@ header {
 .language-flags {
   display: none; }
 
-img {
+.navlogo {
   width: 50%; }
 
 @media only screen and (min-width: 768px) {
   nav {
     text-align: center;
-    border-top: 3px solid #435DA9;
     height: 70px; }
     nav li {
       height: 70px; }
@@ -79,6 +81,9 @@ img {
         background-color: #435DA9; }
 
   img {
-    width: 100%; } }
+    width: 100%; }
+
+  .language-flags {
+    display: inline-block; } }
 
 /*# sourceMappingURL=main.css.map */
