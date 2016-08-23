@@ -16,7 +16,9 @@
             })
 		 	.state("news", {
 		 		url:"/news",
-		 		templateUrl: "html/news.html"
+		 		templateUrl: "html/news.html",
+		 		controller: "NewsController",
+		 		controllerAs: "nc"
 		 	})
 		 	.state("team", {
 		 		url:"/team",

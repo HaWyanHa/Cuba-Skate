@@ -18,6 +18,34 @@ ul {
 img {
   width: 100%; }
 
+.our-mission {
+  border: 1px solid #EFEFEF;
+  border-radius: 1em;
+  margin: 1em; }
+
+.mission-image {
+  padding-bottom: 1em; }
+
+.horizontal-rule {
+  padding-top: .5em;
+  text-align: center;
+  width: 40%;
+  border-top: 1px solid black;
+  margin: 0 auto; }
+
+.home-news {
+  padding-bottom: 1em;
+  text-align: center; }
+
+.news-thumbnail {
+  border: 1px solid #EFEFEF;
+  margin: 1em; }
+  .news-thumbnail:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999; }
+
 header {
   border-top: 5px solid #435DA9;
   position: relative; }

@@ -13,21 +13,21 @@
 	</article>
 </section>
 <section class="container">
-	<article class="home-news row">
-		<h2>News</h2>
-		<article class="col-sm-3 news-thumbnail">
-			<img src="images/news/vice.png">
-			<h3>Exploring Cuba's Skate Culture</h3>
-		</article>
-		<article class="col-sm-3">
-			
-		</article>
-		<article class="col-sm-3">
-			
-		</article>
-		<article class="col-sm-3">
-			
+	<article class="home-news row" ng-controller="NewsController as nc">
+		<h2 class="horizontal-rule">News</h2>
+		<article class="col-sm-3" ng-repeat="thumbnail in nc.news | limitTo: 4">
+			<div class="news-thumbnail">
+				<img ng-src={{thumbnail.image}}>
+				<h3>{{thumbnail.header}}</h3>
+				<time>{{thumbnail.date}}</time>
+				<p>{{thumbnail.story}}</p>
+			</div>
 		</article>
 		<button>Read More</button>
 	</article>	
+</section>
+<section>
+	<article>
+		<h2 class="horizontal-rule">The Team</h2>
+	</article>
 </section>

@@ -2,7 +2,7 @@ img {
 	width: 100%;
 }
 .our-mission {
-	border: 1px solid black;
+	border: 1px solid #EFEFEF;
 	border-radius: 1em;
 	margin: 1em;
 }
@@ -10,12 +10,26 @@ img {
 	padding-bottom: 1em;
 }
 
+.horizontal-rule {
+	padding-top: .5em;
+	text-align: center;
+	width: 40%;
+	border-top: 1px solid black;
+	margin: 0 auto;  //can't belive this centered it!
+}
 
 //news
 .home-news {
-	text-align: center;
+	padding-bottom: 1em;
+	text-align: center; // why does this not work?
 }
 .news-thumbnail {
-	border: 1px solid black;
+	border: 1px solid #EFEFEF;
 	margin: 1em;
+	&:hover {
+		border: solid 1px #CCC;
+    	-moz-box-shadow: 1px 1px 5px #999;
+    	-webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+	}
 }
