@@ -24,19 +24,19 @@
 		</div>
 		<nav ng-class="{'row': true, 'show-menu': mc.showMenu }">
 			<ul>
-				<li ng-class="{'col-sm-2' : true, 'selected': true}">
+				<li ng-class="{'col-sm-2' : true, 'selected': mc.getState() === 'home'}">
 					<a ui-sref="home">Home</a>
 				</li>
-				<li class="col-sm-2">
+				<li ng-class="{'col-sm-2' : true, 'selected': mc.getState() === 'news'}">
 					<a ui-sref="news">News</a>
 				</li>
-				<li class="col-sm-2">
+				<li ng-class="{'col-sm-2' : true, 'selected': mc.getState() === 'team'}">
 					<a ui-sref="team">The Team</a>
 				</li>
-				<li class="col-sm-2">
+				<li ng-class="{'col-sm-2' : true, 'selected': mc.getState() === 'contact'}">
 					<a ui-sref="contact">Contact Us</a>
 				</li>
-				<li class="col-sm-2">
+				<li ng-class="{'col-sm-2' : true, 'selected': mc.getState() === 'donate'}">
 					<a ui-sref="donate">Donate</a>
 				</li>
 				<li class="col-sm-2 language-flags">
