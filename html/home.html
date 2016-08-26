@@ -15,19 +15,24 @@
 <section class="container">
 	<article class="home-news row" ng-controller="NewsController as nc">
 		<h2 class="horizontal-rule">News</h2>
-		<article class="col-sm-3" ng-repeat="thumbnail in nc.news | limitTo: 4">
+		<section class="col-sm-3" ng-repeat="thumbnail in nc.news | limitTo: 4">
 			<div class="news-thumbnail">
 				<img ng-src={{thumbnail.image}}>
 				<h3>{{thumbnail.header}}</h3>
 				<time>{{thumbnail.date}}</time>
 				<p>{{thumbnail.story}}</p>
 			</div>
-		</article>
+		</section>
 		<button>Read More</button>
 	</article>	
 </section>
 <section>
-	<article>
+	<article ng-controller="TeamController as tc">
 		<h2 class="horizontal-rule">The Team</h2>
+		<carousel interval="tc.teamInterval">
+			<slide ng-repeat="slide in tc.team" active="slide.active">
+	        	<img ng-src="{{slide.image}}">
+	        </slide>
+		</carousel>
 	</article>
 </section>
