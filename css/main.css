@@ -46,6 +46,15 @@ img {
     -webkit-box-shadow: 1px 1px 5px #999;
     box-shadow: 1px 1px 5px #999; }
 
+.member-thumbnail {
+  padding: 2em 2em 0 2em; }
+
+.carousel-indicators li {
+  visibility: hidden; }
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none; }
+
 header {
   border-top: 5px solid #435DA9;
   position: relative; }

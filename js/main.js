@@ -1,7 +1,7 @@
 (function () {
 	"use strict";
 
-	angular.module('cuba', ['ui.router', 'ui.bootstrap', 'angular-responsive']).config(cubaConfig);
+	angular.module('cuba', ['ui.router', 'ui.bootstrap']).config(cubaConfig);
 
 	cubaConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 

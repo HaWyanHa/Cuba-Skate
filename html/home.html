@@ -26,12 +26,14 @@
 		<button>Read More</button>
 	</article>	
 </section>
-<section>
+<section class="container">
 	<article ng-controller="TeamController as tc">
 		<h2 class="horizontal-rule">The Team</h2>
-		<carousel interval="tc.teamInterval">
-			<slide ng-repeat="slide in tc.team" active="slide.active">
-	        	<img ng-src="{{slide.image}}">
+		<carousel class="row" interval="tc.teamInterval">
+			<slide class="col-sm-12" ng-repeat="slide in tc.team">
+	        	<img class="member-thumbnail" ng-src="{{slide.image}}">
+	        	<h3>{{slide.name}}</h3>
+	        	<h4 class="horizontal-rule">{{slide.title}}</h4>
 	        </slide>
 		</carousel>
 	</article>

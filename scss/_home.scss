@@ -33,3 +33,17 @@ img {
         box-shadow: 1px 1px 5px #999;
 	}
 }
+
+//team
+.member-thumbnail {
+	padding: 2em 2em 0 2em;
+}
+.carousel-indicators li {
+	visibility: hidden;
+}
+.carousel-control {
+	&.right,
+	&.left  {
+		background-image: none;
+	}
+}
