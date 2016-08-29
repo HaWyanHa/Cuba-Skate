@@ -15,26 +15,54 @@
 <section class="container">
 	<article class="home-news row" ng-controller="NewsController as nc">
 		<h2 class="horizontal-rule">News</h2>
-		<section class="col-sm-3" ng-repeat="thumbnail in nc.news | limitTo: 4">
+		<section class="col-sm-4" ng-repeat="thumbnail in nc.news | limitTo: 3">
 			<div class="news-thumbnail">
-				<img ng-src={{thumbnail.image}}>
-				<h3>{{thumbnail.header}}</h3>
-				<time>{{thumbnail.date}}</time>
-				<p>{{thumbnail.story}}</p>
+				<a ng-href="{{thumbnail.url}}" target="_blank">
+					<img ng-src={{thumbnail.image}}>
+					<h3>{{thumbnail.header}}</h3>
+					<time>{{thumbnail.date}}</time>
+					<p>{{thumbnail.story}}</p>
+				</a>
 			</div>
 		</section>
 		<button>Read More</button>
 	</article>	
 </section>
-<section class="container">
-	<article ng-controller="TeamController as tc">
+<section class="container" ng-controller="TeamController as tc">
+	<article>
 		<h2 class="horizontal-rule">The Team</h2>
 		<carousel class="row" interval="tc.teamInterval">
-			<slide class="col-sm-12" ng-repeat="slide in tc.team">
+			<slide class="col-sm-12" ng-repeat="slide in tc.team" active="slide.active">
 	        	<img class="member-thumbnail" ng-src="{{slide.image}}">
 	        	<h3>{{slide.name}}</h3>
 	        	<h4 class="horizontal-rule">{{slide.title}}</h4>
 	        </slide>
 		</carousel>
 	</article>
+	<section class="row">
+		<article class="col-sm-6">
+			<h2>About Us</h2>
+			<p>{{tc.about}}</p>
+		</article>
+		<article class="col-sm-6">
+			<h2>Our Partners</h2>
+			<section class="row">
+				<article class="col-xs-6" ng-repeat="logo in tc.partner | limitTo: 4">
+					<div class="news-thumbnail">
+						<a ng-href="{{logo.url}}" target="_blank">
+							<img class="partner-logo" src="{{logo.image}}">
+						</a>
+					</div>
+				</article>
+				<button>See More</button>
+			</section>
+		</article>
+	</section>
 </section>
+<section class="container">
+	<h2>Contact us to become Volunteer or Partner Organization</h2>
+	<p>email <a href="mailto:info@cubaskate.com" target="_blank">info@cubaskate.com</a>to get started</p>
+</section>
+<footer>
+	
+</footer>

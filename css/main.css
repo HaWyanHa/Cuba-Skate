@@ -55,6 +55,9 @@ img {
 .carousel-control.right, .carousel-control.left {
   background-image: none; }
 
+.partner-logo {
+  width: 100%; }
+
 header {
   border-top: 5px solid #435DA9;
   position: relative; }

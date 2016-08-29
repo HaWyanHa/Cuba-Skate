@@ -9,6 +9,8 @@
 	function TeamController(TeamService) {
 		this.teamInterval = 3000;
 		this.team = TeamService.getTeam;
+		this.about = TeamService.getAbout;
+		this.partner = TeamService.getPartner;
 	}
 
 })();
