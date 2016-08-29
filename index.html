@@ -11,7 +11,7 @@
 </head>
 <body>
 	<header class="container-fluid" ng-controller="MenuController as mc">
-		<button class="menu-toggle" ng-click='mc.showMenu = !mc.showMenu'>
+		<button ng-class="{'menu-toggle': true, 'menu-toggle-color': mc.menuColor}" ng-click='mc.showMenu = !mc.showMenu; mc.menuColor = !mc.menuColor'>
 			&#9776;
 		</button>
 		<button class="language-toggle">

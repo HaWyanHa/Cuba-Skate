@@ -99,6 +99,9 @@ header {
   right: 1em;
   font-size: 2em; }
 
+.menu-toggle-color {
+  color: #435DA9; }
+
 .language-toggle {
   position: absolute;
   right: 5em;

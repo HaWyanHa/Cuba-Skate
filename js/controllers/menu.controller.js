@@ -9,6 +9,7 @@
 	function MenuController($state, $scope) {
 	    var that = this;
 	    that.showMenu = true;
+	    that.menuColor = false;
 
 	    that.getState = function getState() {
 	    	return $state.current.name;
