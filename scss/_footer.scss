@@ -5,10 +5,20 @@ footer {
 		margin: 0 auto;
 		width: 80%;
 		background-color: $cubaGrey;
+		border-radius: 5px;
 		li {
 			display: inline-block;
 			padding: 1em .5em;
 			font-size: 2em;
+			a {
+				&:hover {
+					color: $cubaBlue;
+				}
+			}
 		}
+	}
+	p {
+		text-align: right;
+		padding: 2em;
 	}
 }
