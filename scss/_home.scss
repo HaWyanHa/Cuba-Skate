@@ -1,6 +1,20 @@
 img {
 	width: 100%;
 }
+.horizontal-rule {
+	padding-top: .5em;
+	text-align: center;
+	width: 40%;
+	border-top: 1px solid black;
+	margin: 0 auto;  //can't belive this centered it!
+}
+
+.title {
+	@extend .horizontal-rule;
+	width: 60%;
+	margin-top: 1em;
+	padding-bottom: .5em;
+}
 .our-mission {
 	border: 1px solid #EFEFEF;
 	border-radius: 1em;
@@ -8,14 +22,6 @@ img {
 }
 .mission-image {
 	padding-bottom: 1em;
-}
-
-.horizontal-rule {
-	padding-top: .5em;
-	text-align: center;
-	width: 40%;
-	border-top: 1px solid black;
-	margin: 0 auto;  //can't belive this centered it!
 }
 
 //news
@@ -46,6 +52,12 @@ img {
 	&.left  {
 		background-image: none;
 	}
+}
+.carousel-control .icon-next:before{
+	color: $cubaBlue;
+}
+.carousel-control .icon-prev:before {
+	color: $cubaBlue;
 }
 .partner-logo {
 	width: 100%;

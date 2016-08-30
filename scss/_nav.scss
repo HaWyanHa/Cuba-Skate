@@ -14,6 +14,7 @@ header {
     	border: none;
 	}
 	li {
+		@include transition(background, 300ms, ease);
 		cursor: pointer;
 		font-size: 2em;
 		border-bottom: 1px solid $cubaGrey;
@@ -50,6 +51,7 @@ header {
 	position: absolute;
 	right: 1em;
 	font-size: 2em;
+	@include transition(color, 200ms, ease);
 }
 .menu-toggle-color {
 	color: $cubaBlue;

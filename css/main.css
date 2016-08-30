@@ -18,6 +18,18 @@ ul {
 img {
   width: 100%; }
 
+.horizontal-rule, .title {
+  padding-top: .5em;
+  text-align: center;
+  width: 40%;
+  border-top: 1px solid black;
+  margin: 0 auto; }
+
+.title {
+  width: 60%;
+  margin-top: 1em;
+  padding-bottom: .5em; }
+
 .our-mission {
   border: 1px solid #EFEFEF;
   border-radius: 1em;
@@ -25,13 +37,6 @@ img {
 
 .mission-image {
   padding-bottom: 1em; }
-
-.horizontal-rule {
-  padding-top: .5em;
-  text-align: center;
-  width: 40%;
-  border-top: 1px solid black;
-  margin: 0 auto; }
 
 .home-news {
   padding-bottom: 1em;
@@ -55,6 +60,12 @@ img {
 .carousel-control.right, .carousel-control.left {
   background-image: none; }
 
+.carousel-control .icon-next:before {
+  color: #435DA9; }
+
+.carousel-control .icon-prev:before {
+  color: #435DA9; }
+
 .partner-logo {
   width: 100%; }
 
@@ -71,6 +82,11 @@ header {
     background-color: white;
     border: none; }
   header li {
+    -webkit-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
     cursor: pointer;
     font-size: 2em;
     border-bottom: 1px solid #D9DADB;
@@ -97,7 +113,12 @@ header {
 .menu-toggle {
   position: absolute;
   right: 1em;
-  font-size: 2em; }
+  font-size: 2em;
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -ms-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease; }
 
 .menu-toggle-color {
   color: #435DA9; }
