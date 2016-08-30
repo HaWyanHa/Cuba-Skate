@@ -19,6 +19,9 @@ img {
 	border: 1px solid #EFEFEF;
 	border-radius: 1em;
 	margin: 1em;
+	p {
+		padding-bottom: 2em;
+	}
 }
 .mission-image {
 	padding-bottom: 1em;
@@ -28,9 +31,11 @@ img {
 .home-news {
 	padding-bottom: 1em;
 	text-align: center; // why does this not work?
+	margin-top: 4em;
 }
 .news-thumbnail {
 	border: 1px solid #EFEFEF;
+	border-radius: 5px;
 	margin: 1em;
 	&:hover {
 		border: solid 1px #CCC;
@@ -39,8 +44,22 @@ img {
         box-shadow: 1px 1px 5px #999;
 	}
 }
+.read-more {
+	border-radius: 5px;
+    border: 1px solid #CBCBCB;
+    background-color: #FBFBFB;
+    padding: .5em 3em .5em 3em;
+    @include transition(all, 200ms, ease);
+    &:hover {
+    	background-color: $cubaBlue;
+    	color: white;
+    }
+}
 
 //team
+.home-team {
+	@extend .home-news;
+}
 .member-thumbnail {
 	padding: 2em 2em 0 2em;
 }
@@ -59,6 +78,42 @@ img {
 .carousel-control .icon-prev:before {
 	color: $cubaBlue;
 }
+.home-about-us {
+	border-radius: 5px;
+	border: 1px solid #EFEFEF;
+	margin: 1em;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	p {
+		text-align: left;
+		margin: 1em;
+	}
+}
+.home-our-partners {
+	@extend .horizontal-rule;
+		width: 60%;
+		margin-top: 3em;
+	
+}
+.partner-thumbnail {
+	@extend .news-thumbnail;
+}
 .partner-logo {
 	width: 100%;
+}
+.see-more {
+	@extend .read-more;
+}
+//donate
+.home-donate {
+	@extend .home-news;
+	.donate-button {
+		background-color: $cubaBlue;
+		color: white;
+		width: 90%;
+		border: none;
+		&:hover {
+			background-color: #3055c1;
+		}
+	}
 }

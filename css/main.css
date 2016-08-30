@@ -15,10 +15,13 @@ ul {
   ul a:hover {
     text-decoration: none; }
 
+.margin-for-nav {
+  margin-top: 4em; }
+
 img {
   width: 100%; }
 
-.horizontal-rule, .title {
+.horizontal-rule, .title, .home-our-partners {
   padding-top: .5em;
   text-align: center;
   width: 40%;
@@ -34,22 +37,40 @@ img {
   border: 1px solid #EFEFEF;
   border-radius: 1em;
   margin: 1em; }
+  .our-mission p {
+    padding-bottom: 2em; }
 
 .mission-image {
   padding-bottom: 1em; }
 
-.home-news {
+.home-news, .home-team, .home-donate {
   padding-bottom: 1em;
-  text-align: center; }
+  text-align: center;
+  margin-top: 4em; }
 
-.news-thumbnail {
+.news-thumbnail, .partner-thumbnail {
   border: 1px solid #EFEFEF;
+  border-radius: 5px;
   margin: 1em; }
-  .news-thumbnail:hover {
+  .news-thumbnail:hover, .partner-thumbnail:hover {
     border: solid 1px #CCC;
     -moz-box-shadow: 1px 1px 5px #999;
     -webkit-box-shadow: 1px 1px 5px #999;
     box-shadow: 1px 1px 5px #999; }
+
+.read-more, .see-more {
+  border-radius: 5px;
+  border: 1px solid #CBCBCB;
+  background-color: #FBFBFB;
+  padding: .5em 3em .5em 3em;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease; }
+  .read-more:hover, .see-more:hover {
+    background-color: #435DA9;
+    color: white; }
 
 .member-thumbnail {
   padding: 2em 2em 0 2em; }
@@ -66,12 +87,49 @@ img {
 .carousel-control .icon-prev:before {
   color: #435DA9; }
 
+.home-about-us {
+  border-radius: 5px;
+  border: 1px solid #EFEFEF;
+  margin: 1em;
+  padding-top: 3em;
+  padding-bottom: 2em; }
+  .home-about-us p {
+    text-align: left;
+    margin: 1em; }
+
+.home-our-partners {
+  width: 60%;
+  margin-top: 3em; }
+
 .partner-logo {
   width: 100%; }
 
+.home-donate .donate-button {
+  background-color: #435DA9;
+  color: white;
+  width: 90%;
+  border: none; }
+  .home-donate .donate-button:hover {
+    background-color: #3055c1; }
+
+footer {
+  padding-top: 2em;
+  text-align: center; }
+  footer ul {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #D9DADB; }
+    footer ul li {
+      display: inline-block;
+      padding: 1em .5em;
+      font-size: 2em; }
+
 header {
+  z-index: 5;
   border-top: 5px solid #435DA9;
-  position: relative; }
+  border-bottom: 1px solid #D9DADB;
+  background-color: white;
+  position: fixed; }
   header .nav-logo {
     cursor: auto; }
     header .nav-logo:hover {
@@ -107,18 +165,24 @@ header {
   .selected a {
     color: white; }
 
-.show-menu > ul {
-  display: none; }
+.show-menu {
+  -webkit-transition: all 200ms slidedown;
+  -moz-transition: all 200ms slidedown;
+  -ms-transition: all 200ms slidedown;
+  -o-transition: all 200ms slidedown;
+  transition: all 200ms slidedown; }
+  .show-menu > ul {
+    display: none; }
 
 .menu-toggle {
   position: absolute;
   right: 1em;
   font-size: 2em;
-  -webkit-transition: color 200ms ease;
-  -moz-transition: color 200ms ease;
-  -ms-transition: color 200ms ease;
-  -o-transition: color 200ms ease;
-  transition: color 200ms ease; }
+  -webkit-transition: color 100ms ease;
+  -moz-transition: color 100ms ease;
+  -ms-transition: color 100ms ease;
+  -o-transition: color 100ms ease;
+  transition: color 100ms ease; }
 
 .menu-toggle-color {
   color: #435DA9; }

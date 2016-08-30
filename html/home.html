@@ -1,5 +1,5 @@
 
-	<img src="images/home/example.png">
+	<img class="margin-for-nav" src="images/home/example.png">
 
 <section class="container">
 	<article class="our-mission row">
@@ -25,48 +25,64 @@
 				</a>
 			</div>
 		</section>
-		<button>Read More</button>
+		<button class="read-more">Read More</button>
 	</article>	
 </section>
-<section class="container" ng-controller="TeamController as tc">
-	<article>
+<section class="container home-team" ng-controller="TeamController as tc">
+	<div class="home-about-us">
 		<h2 class="horizontal-rule">The Team</h2>
-		<carousel class="row" interval="tc.teamInterval">
-			<slide class="col-sm-12" ng-repeat="slide in tc.team" active="slide.active">
-	        	<img class="member-thumbnail" ng-src="{{slide.image}}">
-	        	<h3>{{slide.name}}</h3>
-	        	<h4 class="horizontal-rule">{{slide.title}}</h4>
-	        </slide>
-		</carousel>
-	</article>
-	<section class="row">
-		<article class="col-sm-6">
-			<h2>About Us</h2>
-			<p>{{tc.about}}</p>
+		<div class="row">
+			<article class="col-sm-6">
+					<p>{{tc.about}}</p>
+			</article>
+		</div>
+		<article>
+			<carousel class="row" interval="tc.teamInterval">
+				<slide class="col-sm-12" ng-repeat="slide in tc.team" active="slide.active">
+		        	<img class="member-thumbnail" ng-src="{{slide.image}}">
+		        	<h3>{{slide.name}}</h3>
+		        	<h4 class="horizontal-rule">{{slide.title}}</h4>
+		        </slide>
+			</carousel>
 		</article>
-		<article class="col-sm-6">
-			<h2>Our Partners</h2>
-			<section class="row">
-				<article class="col-xs-6" ng-repeat="logo in tc.partner | limitTo: 4">
-					<div class="news-thumbnail">
-						<a ng-href="{{logo.url}}" target="_blank">
-							<img class="partner-logo" src="{{logo.image}}">
-						</a>
-					</div>
-				</article>
-				<button>See More</button>
-			</section>
-		</article>
-	</section>
+		<section class="row">
+			<article class="col-sm-6">
+				<h3 class="home-our-partners">Our Partners</h3>
+				<section class="row">
+					<article class="col-xs-6" ng-repeat="logo in tc.partner | limitTo: 4">
+						<div class="partner-thumbnail">
+							<a ng-href="{{logo.url}}" target="_blank">
+								<img class="partner-logo" src="{{logo.image}}">
+							</a>
+						</div>
+					</article>
+					<button class="see-more">See More</button>
+				</section>
+			</article>
+		</section>
+	</div>
 </section>
 <section class="container">
-	<h2>Contact us to become Volunteer or Partner Organization</h2>
-	<p>email <a href="mailto:info@cubaskate.com" target="_blank">info@cubaskate.com</a>to get started</p>
+	<p>email <a href="mailto:info@cubaskate.com" target="_blank">info@cubaskate.com</a> to get involved</p>
 </section>
-<section>
+<section class="home-donate">
 	<p>explanaiton about donation</p>
-	<button>Donate Now</button>
+	<button class="donate-button">Donate Now</button>
 </section>
 <footer>
-	
+	<h4>Let's Be Friends</h4>
+	<ul>
+		<li>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+		</li>
+		<li>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+		</li>
+		<li>
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+		</li>
+		<li>
+			<i class="fa fa-vimeo" aria-hidden="true"></i>
+		</li>
+	</ul>
 </footer>
