@@ -20,10 +20,9 @@
 		});
 
 		$scope.stateChange = function() {
-			console.log("state has changed");
 		    that.showMenu = true;
-		    console.log("show menu is false");
-	    	}
+		    that.menuColor = false;
+	    };
     }
 
 
