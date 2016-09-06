@@ -5,8 +5,9 @@
 				<h3>{{article.header}}</h3>
 			</a>
 			<img class="center-block" ng-src={{article.image}}>
-			<time>{{thumbnail.date}}</time>
-			<p>{{thumbnail.story}}</p>
-			<a class="read-more" ng-href="{{article.url}}" target="_blank">Read more...</a>
+			<address>{{article.author}}... |</address>
+			<time>{{article.date}}</time>
+			<p>{{article.story.substr(0,130)}}...</p>
+			<a class="read-more-link" ng-href="{{article.url}}" target="_blank">Read more...</a>
 	</article>
 </section>

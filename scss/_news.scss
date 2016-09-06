@@ -9,15 +9,41 @@
 }
 .news-article {
 	padding-top: 1em;
+	padding-bottom: 3em;
 	&:nth-child(odd) {
 		padding-top: 2em;
-		background-color: green;
+		background-color: $cubaGrey;
 	}
 	h3 {
 		color: $cubaHeaderColor;
+		padding: 1em;
+
 
 	}
 	img {
-		width: 80%;
+		width: 85%;
+	}
+	address{
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-left: 2em;
+		display: inline-block;
+		color: #696C6B;
+	}
+	time{
+		display: inline-block;
+		color: #696C6B;
+	}
+	p{
+		color: $cubaFontColor;
+		padding-left: 2em
+	}
+}
+.read-more-link {
+	padding-left: 2em;
+	@include transition(color, 300ms, ease);
+	&:hover {
+		color: $cubaBlue;
+		text-decoration: underline;
 	}
 }
