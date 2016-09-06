@@ -1,0 +1,23 @@
+.news-header {
+	padding-top: 3em;
+	padding-bottom: 1.5em;
+	margin-top: 0; 
+	text-align: center;
+	background-color: $cubaBlue;
+	color: white;
+	font-size: 2.5em;
+}
+.news-article {
+	padding-top: 1em;
+	&:nth-child(odd) {
+		padding-top: 2em;
+		background-color: green;
+	}
+	h3 {
+		color: $cubaHeaderColor;
+
+	}
+	img {
+		width: 80%;
+	}
+}

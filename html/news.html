@@ -1,1 +1,12 @@
-<p>News</p>
+<section>
+	<h1 class="news-header">News</h1>
+	<article class="news-article" ng-repeat="article in nc.news">
+			<a ng-href="{{article.url}}" target="_blank">
+				<h3>{{article.header}}</h3>
+			</a>
+			<img class="center-block" ng-src={{article.image}}>
+			<time>{{thumbnail.date}}</time>
+			<p>{{thumbnail.story}}</p>
+			<a class="read-more" ng-href="{{article.url}}" target="_blank">Read more...</a>
+	</article>
+</section>

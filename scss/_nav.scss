@@ -5,9 +5,14 @@ header {
 	background-color: white;
 	position: fixed;
 	.nav-logo {
+		width: 2555px;
+		background-color: white;
 		cursor: auto;
 		&:hover {
 			background-color: white;
+		}
+		img {
+		width: 200px;
 		}
 	}
 	button {
@@ -57,7 +62,7 @@ header {
 
 .menu-toggle {
 	z-index: 3;
-	position: absolute;
+	position: fixed;
 	right: 1em;
 	font-size: 2em;
 	@include transition(color, 100ms, ease);
@@ -66,17 +71,17 @@ header {
 	color: $cubaBlue;
 }
 .language-toggle {
-	position: absolute;
+	position: fixed;
 	right: 5em;
-    top: .8em;
+    top: 1em;
     font-size: 1em;
 }
 .language-flags {
 	display: none;
 }
-.navlogo {
-	width: 50%;
-}
+// .navlogo {
+// 	width: 50px;
+// }
 
 @media only screen and (min-width : 768px) {
 	nav {
