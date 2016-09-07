@@ -215,6 +215,8 @@ img {
     text-align: left; }
     .familia-team p:first-child {
       padding-top: 1em; }
+  .familia-team i {
+    margin-right: .3em; }
 
 footer {
   padding-top: 2em;
