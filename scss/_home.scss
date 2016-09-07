@@ -20,8 +20,19 @@ img {
 	border-radius: 1em;
 	margin: 1em;
 	p {
-		padding-bottom: 2em;
+		padding-bottom: 1em;
 	}
+}
+.donate {
+		background-color: $cubaBlue;
+		color: white;
+		width: 50%;
+		margin-bottom: 1em;
+		border: none;
+		&:hover {
+			background-color: #3055c1;
+		}
+		font-size: 2em;
 }
 .mission-image {
 	padding-bottom: 1em;

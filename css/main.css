@@ -38,7 +38,17 @@ img {
   border-radius: 1em;
   margin: 1em; }
   .our-mission p {
-    padding-bottom: 2em; }
+    padding-bottom: 1em; }
+
+.donate {
+  background-color: #435DA9;
+  color: white;
+  width: 50%;
+  margin-bottom: 1em;
+  border: none;
+  font-size: 2em; }
+  .donate:hover {
+    background-color: #3055c1; }
 
 .mission-image {
   padding-bottom: 1em; }
