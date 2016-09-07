@@ -68,6 +68,10 @@ img {
 }
 
 //team
+.team-horizontal-rule {
+	@extend .horizontal-rule;
+	width: 50%;
+}
 .home-team {
 	@extend .home-news;
 }

@@ -22,7 +22,9 @@
 		 	})
 		 	.state("team", {
 		 		url:"/team",
-		 		templateUrl: "html/team.html"
+		 		templateUrl: "html/team.html",
+		 		controller: "TeamController",
+		 		controllerAs: "tc"
 		 	})
 		 	.state("contact", {
 		 		url:"/contact",

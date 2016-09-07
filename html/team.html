@@ -3,4 +3,36 @@
 	<div class="videoWrapper">
     	<iframe width="560" height="349" src="https://player.vimeo.com/video/96121779" frameborder="0" showinfo="0" controls="0" autohide="1"></iframe>
 	</div>
+	<article class="our-history">
+		<h2 class="title">Our History</h2>
+		<p>Cuba Skate was started by Lauren Bradley and Miles Jackson, two University of Michigan graduates who participated in a study abroad program in Havana, Cuba. In addition to their time in the classroom and touring the country’s provinces, much of their most influential time was spent with a group of Cuban skate friends. Every day they got to know this group of Cubans on a very personal level, giving them the opportunity to grow as friends and ultimately as an extended family. A key element of this close relationship was a shared passion for skateboarding. This international culture and sport molded Lauren, Miles and these Cuban skaters into a tight unit.</p>
+	</article>
+	<article class="container-fluid team-staff">
+		<h2 class="staff">Staff</h2>
+		<section class="row">
+			<div class="col-xs-4" ng-repeat="people in tc.team | limitTo : 3">
+				<img ng-src="{{people.image}}">
+				<h5>{{people.name}}</h5>
+				<p>{{people.title}}</p>
+			</div>
+		</section>
+		<section class="row">
+			<div class="col-xs-4" ng-repeat="people in tc.team | limitTo : 3 : 3">
+				<img ng-src="{{people.image}}">
+				<h5>{{people.name}}</h5>
+				<p>{{people.title}}</p>
+			</div>
+		</section>
+	</article>
+
+
+	<article class="container-fluid">
+		<carousel class="row" interval="tc.teamInterval">
+			<slide class="col-sm-12" ng-repeat="slide in tc.team" active="slide.active">
+	        	<img class="member-thumbnail" ng-src="{{slide.image}}">
+	        	<h3>{{slide.name}}</h3>
+	        	<h4 class="horizontal-rule">{{slide.title}}</h4>
+	        </slide>
+		</carousel>
+	</article>
 </section>
