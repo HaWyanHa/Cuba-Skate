@@ -11,6 +11,7 @@
 		this.team = TeamService.getTeam;
 		this.about = TeamService.getAbout;
 		this.partner = TeamService.getPartner;
+		this.familia = TeamService.getFamilia;
 	}
 
 })();

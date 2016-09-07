@@ -26,3 +26,27 @@
 	@extend .horizontal-rule;
 	padding-bottom: 1em;
 }
+.familia {
+	padding-top: 3em;
+	text-align: justify;
+	h5 {
+		text-align: center;
+	}
+}
+.familia-team {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: .5em;
+	span {
+		font-weight: bold;
+	}
+	img {
+		padding: 1em 1em 1em 0;
+	}
+	p {
+		text-align: left;
+		&:first-child {
+			padding-top: 1em;
+		}
+	}
+}

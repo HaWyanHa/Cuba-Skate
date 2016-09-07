@@ -29,11 +29,20 @@
 
 		];
 
+	var familia =[
+			{"image": "images/team/members/miles.png", "name": "Reinaldo Vicet", "hometown": "Vedado", "skates": "Goofy"},
+			{"image": "images/team/members/miles.png", "name": "Claudio Garcia", "hometown": "Nuevo Vedado", "skates": "Goofy"},
+			{"image": "images/team/members/miles.png", "name": "Yoendry Bombul (Jimi)", "hometown": "Centro Havana", "skates": "Goofy"},
+			{"image": "images/team/members/miles.png", "name": "Orlando Rosales", "hometown": "Some town", "skates": "Regular"},
+			{"image": "images/team/members/miles.png", "name": "Jose Dominguez", "hometown": "Nuevo Vedado", "skates": "Regular"}
+		];
+
 	function TeamService (){
 			return {
 				getTeam: teamMembers,
 				getAbout: about,
-				getPartner: partners
+				getPartner: partners,
+				getFamilia: familia
 			};
 		}
 })();

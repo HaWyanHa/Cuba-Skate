@@ -23,6 +23,24 @@
 				<p>{{people.title}}</p>
 			</div>
 		</section>
+		<section class="familia">
+			<h2 class="staff">Familia</h2>
+			<p>23yG is a downtown skate spot which became the catalyst for the greater skate movement in Cuba. The 23yG skate squad is named after landmark area, featuring many of Cuba’s most dedicated, talented riders. The 23yG familia has spread its wings to help lay the foundation for the emerging generation of skaters across the island.</p>
+			<h5>Skateboard Ambassadors</h5>
+			<p>We are grateful of the support of many professional skateboarders, distributions, and local skate shops across the world.  As we continue to promote skateboarding diplomacy, we are honored and humbled to have these ambassadors join us in our mission.</p>
+			<article class="row familia-team" ng-repeat="people in tc.familia">
+				<div class="col-xs-6">
+					<img ng-src="{{people.image}}">
+				</div>
+				<div class="col-xs-6">
+					<p><span>Name: </span>{{people.name}}</p>
+					<p><span>Hometown: </span>{{people.hometown}}</p>
+					<p><span>Skates: </span>{{people.skates}}</p>
+					<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+					<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+				</div>
+			</article>
+		</section>
 	</article>
 
 

@@ -197,6 +197,25 @@ img {
 .staff {
   padding-bottom: 1em; }
 
+.familia {
+  padding-top: 3em;
+  text-align: justify; }
+  .familia h5 {
+    text-align: center; }
+
+.familia-team {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: .5em; }
+  .familia-team span {
+    font-weight: bold; }
+  .familia-team img {
+    padding: 1em 1em 1em 0; }
+  .familia-team p {
+    text-align: left; }
+    .familia-team p:first-child {
+      padding-top: 1em; }
+
 footer {
   padding-top: 2em;
   text-align: center; }
