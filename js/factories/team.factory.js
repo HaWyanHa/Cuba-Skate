@@ -37,12 +37,19 @@
 			{"image": "images/team/members/miles.png", "name": "Jose Dominguez", "hometown": "Nuevo Vedado", "skates": "Regular"}
 		];
 
+	var skatespots = [
+			{"image": "images/team/skatespots/test.jpg"},
+			{"image": "images/team/skatespots/test.jpg"},
+			{"image": "images/team/skatespots/test.jpg"}
+		];
+	
 	function TeamService (){
 			return {
 				getTeam: teamMembers,
 				getAbout: about,
 				getPartner: partners,
-				getFamilia: familia
+				getFamilia: familia,
+				getSkatespots: skatespots
 			};
 		}
 })();

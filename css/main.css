@@ -204,7 +204,7 @@ img {
     text-align: center; }
 
 .familia-team {
-  border: 1px solid black;
+  border: 1px solid #D9DADB;
   border-radius: 5px;
   margin: .5em; }
   .familia-team span {
@@ -217,6 +217,14 @@ img {
       padding-top: 1em; }
   .familia-team i {
     margin-right: .3em; }
+    .familia-team i:hover {
+      color: #435DA9; }
+
+.skatepark {
+  text-align: justify; }
+  .skatepark .staff {
+    margin-top: 2em;
+    width: 60%; }
 
 footer {
   padding-top: 2em;

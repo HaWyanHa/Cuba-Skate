@@ -36,15 +36,33 @@
 					<p><span>Name: </span>{{people.name}}</p>
 					<p><span>Hometown: </span>{{people.hometown}}</p>
 					<p><span>Skates: </span>{{people.skates}}</p>
-					<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-					<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+					<a href="">
+						<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="">
+						<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+					</a>
 				</div>
 			</article>
+		</section>
+		<section class="skatepark">
+			<h2 class="staff">The Skatepark</h2>
+			<p>There are countless skate spots all over Havana and its municipalities.  The island at large is home to awesome plazas, gnarly terrain, and dynamic skate spaces in provinces like Pinar del Rio, Holguin, Matanzas, and Las Tunas, to name a few.</p>
+			<p>In Havana, El Patinodromo is a local skatepark where Cuban skaters, BMXers, and inline skaters congregate to skate, bike, and hangout.  Unfortunately, the current condition of the park is in extreme disrepair and only continues to worsen.  A mixture of brutal summer heat, severe downpours during the rainy season, and poor irrigation have created cracks, puddles and weeds throughout the park, while the metal ramps deteriorate daily.</p>
+
+			<carousel class="row" interval="tc.skateInterval">
+				<slide class="col-sm-12" ng-repeat="pictures in tc.skatespots" active="pictures.active">
+	        		<img ng-src="{{pictures.image}}">
+	        	</slide>
+			</carousel>
+		</section>
+		<section>
+			<h2 class="title">Partners</h2>
 		</section>
 	</article>
 
 
-	<article class="container-fluid">
+<!-- 	<article class="container-fluid">
 		<carousel class="row" interval="tc.teamInterval">
 			<slide class="col-sm-12" ng-repeat="slide in tc.team" active="slide.active">
 	        	<img class="member-thumbnail" ng-src="{{slide.image}}">
@@ -52,5 +70,5 @@
 	        	<h4 class="horizontal-rule">{{slide.title}}</h4>
 	        </slide>
 		</carousel>
-	</article>
+	</article> -->
 </section>
