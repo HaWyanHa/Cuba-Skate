@@ -55,8 +55,10 @@ img {
 
 .home-news, .home-team, .home-donate {
   padding-bottom: 1em;
-  text-align: center;
   margin-top: 4em; }
+  .home-news button, .home-team button, .home-donate button {
+    display: block;
+    margin: 0 auto; }
 
 .news-thumbnail, .partner-thumbnail {
   border: 1px solid #EFEFEF;
@@ -67,6 +69,15 @@ img {
     -moz-box-shadow: 1px 1px 5px #999;
     -webkit-box-shadow: 1px 1px 5px #999;
     box-shadow: 1px 1px 5px #999; }
+  .news-thumbnail h3, .partner-thumbnail h3 {
+    padding-left: .5em; }
+  .news-thumbnail address, .partner-thumbnail address {
+    padding-left: 1em;
+    display: inline-block; }
+  .news-thumbnail time, .partner-thumbnail time {
+    display: inline-block; }
+  .news-thumbnail p, .partner-thumbnail p {
+    padding-left: 1em; }
 
 .read-more, .see-more {
   border-radius: 5px;

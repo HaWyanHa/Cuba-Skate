@@ -16,15 +16,14 @@
 <section class="container">
 	<article class="home-news row" ng-controller="NewsController as nc">
 		<h2 class="horizontal-rule">News</h2>
-		<section class="col-sm-4" ng-repeat="thumbnail in nc.news | limitTo: 3">
-			<div class="news-thumbnail">
+		<section class="col-sm-4 news-thumbnail" ng-repeat="thumbnail in nc.news | limitTo: 3">
 				<a ng-href="{{thumbnail.url}}" target="_blank">
 					<img ng-src={{thumbnail.image}}>
 					<h3>{{thumbnail.header}}</h3>
+					<address>{{thumbnail.author}} |</address>
 					<time>{{thumbnail.date}}</time>
-					<p>{{thumbnail.story}}</p>
+					<p>{{thumbnail.story.substr(0,76)}}...</p>
 				</a>
-			</div>
 		</section>
 		<button class="read-more">Read More</button>
 	</article>	
