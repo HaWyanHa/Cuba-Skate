@@ -24,9 +24,12 @@ img {
 .horizontal-rule, .title, .team-horizontal-rule, .home-our-partners, .staff {
   padding-top: .5em;
   text-align: center;
-  width: 40%;
+  width: 70%;
   border-top: 1px solid black;
   margin: 0 auto; }
+
+h4.horizontal-rule, h4.title, h4.team-horizontal-rule, h4.home-our-partners, h4.staff {
+  font-size: 1em; }
 
 .title {
   width: 60%;

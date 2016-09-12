@@ -4,11 +4,13 @@ img {
 .horizontal-rule {
 	padding-top: .5em;
 	text-align: center;
-	width: 40%;
+	width: 70%;
 	border-top: 1px solid black;
 	margin: 0 auto;  //can't belive this centered it!
 }
-
+h4.horizontal-rule {
+	font-size: 1em;
+}
 .title {
 	@extend .horizontal-rule;
 	width: 60%;
