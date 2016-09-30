@@ -1,9 +1,13 @@
 header {
 	z-index: 5;
+	width: 100%;
 	border-top: 5px solid $cubaBlue;
 	border-bottom: 1px solid $cubaGrey;
 	background-color: white;
 	position: fixed;
+	img {
+		width: 200px;
+		}
 	.nav-logo {
 		display: block;
 		width: 100%;
@@ -12,9 +16,6 @@ header {
 		&:hover {
 			background-color: white;
 		}
-		// img {
-		// width: 200px;
-		// }
 	}
 
 	button {

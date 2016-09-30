@@ -260,10 +260,13 @@ footer {
 
 header {
   z-index: 5;
+  width: 100%;
   border-top: 5px solid #435DA9;
   border-bottom: 1px solid #D9DADB;
   background-color: white;
   position: fixed; }
+  header img {
+    width: 200px; }
   header .nav-logo {
     display: block;
     width: 100%;
