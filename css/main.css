@@ -265,13 +265,12 @@ header {
   background-color: white;
   position: fixed; }
   header .nav-logo {
-    width: 2555px;
+    display: block;
+    width: 100%;
     background-color: white;
     cursor: auto; }
     header .nav-logo:hover {
       background-color: white; }
-    header .nav-logo img {
-      width: 200px; }
   header button {
     z-index: 1;
     color: #696C6B;
@@ -335,14 +334,34 @@ header {
 .language-flags {
   display: none; }
 
+.navlogo {
+  width: 100%; }
+
 @media only screen and (min-width: 768px) {
+  header .nav-logo img {
+    width: 300px; }
+
   nav {
+    position: fixed;
+    left: 350px;
+    top: 10px;
     text-align: center;
     height: 70px; }
     nav li {
       height: 70px; }
       nav li:hover {
         background-color: #435DA9; }
+
+  .menu-toggle {
+    display: none; }
+
+  .language-toggle {
+    display: none; }
+
+  .show-menu {
+    display: inline-block; }
+    .show-menu > ul {
+      display: block; }
 
   img {
     width: 100%; }

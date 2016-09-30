@@ -33,7 +33,7 @@
 		 	.state("donate", {
 		 		url:"/donate",
 		 		templateUrl: "html/donate.html"
-		 	})
+		 	});
 	}
 
 	

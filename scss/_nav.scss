@@ -5,16 +5,18 @@ header {
 	background-color: white;
 	position: fixed;
 	.nav-logo {
-		width: 2555px;
+		display: block;
+		width: 100%;
 		background-color: white;
 		cursor: auto;
 		&:hover {
 			background-color: white;
 		}
-		img {
-		width: 200px;
-		}
+		// img {
+		// width: 200px;
+		// }
 	}
+
 	button {
 		z-index: 1;
 		color: $cubaFontColor;
@@ -79,19 +81,42 @@ header {
 .language-flags {
 	display: none;
 }
-// .navlogo {
-// 	width: 50px;
-// }
+.navlogo {
+	width: 100%;
+}
 
 @media only screen and (min-width : 768px) {
-	nav {
-	text-align: center;
-	height: 70px;
-		li {
-			height: 70px;
-			&:hover {
-				background-color: $cubaBlue;
+	header {
+		.nav-logo {
+			img {
+				width: 300px;
 			}
+		}
+	}
+
+	nav {
+		position: fixed;
+		left: 350px;
+		top: 10px;
+		text-align: center;
+		height: 70px;
+			li {
+				height: 70px;
+				&:hover {
+					background-color: $cubaBlue;
+				}
+			}
+	}
+	.menu-toggle {
+		display: none;
+	}
+	.language-toggle {
+		display: none;
+	}
+	.show-menu {
+		display: inline-block;
+		> ul {
+			display: block;
 		}
 	}
 	img {
