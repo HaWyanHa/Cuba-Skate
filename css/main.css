@@ -140,6 +140,9 @@ h4.horizontal-rule, h4.title, h4.team-horizontal-rule, h4.home-our-partners, h4.
   .home-donate .donate-button:hover {
     background-color: #3055c1; }
 
+@media only screen and (min-width: 768px) {
+  .news-thumbnail, .partner-thumbnail {
+    margin: 0; } }
 .news-header {
   padding-top: 3em;
   padding-bottom: 1.5em;
@@ -399,6 +402,9 @@ header {
       display: block; }
 
   .language-flags {
-    display: inline-block; } }
+    display: inline-block; }
+
+  .mission-image {
+    padding-top: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
