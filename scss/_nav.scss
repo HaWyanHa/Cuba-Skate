@@ -97,16 +97,51 @@ header {
 
 	nav {
 		position: fixed;
-		left: 350px;
 		top: 10px;
+		right: 4em;
+		float: right;
 		text-align: center;
 		height: 70px;
 			li {
+				@include transition(background, 0ms, ease);
+			    margin-top: 1em;
+			    margin-bottom: 1em;
+			    padding-top: 1em;
+			    padding-right: 0;
+			    border-bottom: none;
+    			height: 53px;
+				font-size: 1em;
 				height: 70px;
 				&:hover {
-					background-color: $cubaBlue;
+					border-bottom: none;
+					border-radius: 10px;
+					height: 4em;
+								}
+			}
+			li:last-child {
+				&:hover{
+					background-color: rgba(0, 0, 0, 0);
+					cursor: default;
 				}
 			}
+	}
+	.selected {
+		height: 4em;
+		border-radius: 10px;
+	}
+	.language-flags {
+		img {
+			width: 3em;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		li{
+			position: relative;
+    		top: -35px;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0);
+		}}
 	}
 	.menu-toggle {
 		display: none;
@@ -119,9 +154,6 @@ header {
 		> ul {
 			display: block;
 		}
-	}
-	img {
-	width: 100%;
 	}
 	.language-flags {
 		display: inline-block;
