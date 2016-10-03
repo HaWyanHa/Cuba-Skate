@@ -94,7 +94,6 @@ header {
 			}
 		}
 	}
-
 	nav {
 		position: fixed;
 		top: 10px;
@@ -103,20 +102,27 @@ header {
 		text-align: center;
 		height: 70px;
 			li {
-				@include transition(background, 0ms, ease);
+				@include transition(all, 300ms, ease);
 			    margin-top: 1em;
 			    margin-bottom: 1em;
 			    padding-top: 1em;
+			    padding-bottom: 1em;
 			    padding-right: 0;
 			    border-bottom: none;
-    			height: 53px;
+			    border-radius: 10px;
 				font-size: 1em;
-				height: 70px;
+				height: 4em;
 				&:hover {
 					border-bottom: none;
 					border-radius: 10px;
-					height: 4em;
-								}
+				}
+				// a {
+				// 	position: absolute;
+				// 	left: 50%;
+				// 	right: 50%;
+				// 	transform: translate(-50%, -50%);
+				// }     ***********this centers text vertically****************
+
 			}
 			li:last-child {
 				&:hover{
@@ -128,6 +134,11 @@ header {
 	.selected {
 		height: 4em;
 		border-radius: 10px;
+	}
+	.get-involved{
+		position: relative;
+		top: -10px;
+		padding-bottom: 0;
 	}
 	.language-flags {
 		img {
