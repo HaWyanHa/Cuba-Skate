@@ -145,7 +145,10 @@ h4.horizontal-rule, h4.title, h4.team-horizontal-rule, h4.home-our-partners, h4.
     margin: 0; }
 
   .horizontal-rule, .title, .team-horizontal-rule, .home-our-partners, .staff {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+
+  .our-mission p, .our-history p {
+    padding-top: 1em; } }
 .news-header {
   padding-top: 3em;
   padding-bottom: 1.5em;
@@ -375,6 +378,9 @@ header {
       nav li:hover {
         border-bottom: none;
         border-radius: 10px; }
+      nav li.col-sm-2 {
+        width: 16%;
+        margin-right: .66666667%; }
     nav li:last-child:hover {
       background-color: transparent;
       cursor: default; }
