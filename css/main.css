@@ -148,7 +148,10 @@ h4.horizontal-rule, h4.title, h4.team-horizontal-rule, h4.home-our-partners, h4.
     padding-bottom: 0; }
 
   .our-mission p, .our-history p {
-    padding-top: 1em; } }
+    padding-top: 1em; }
+
+  .home-news button, .home-team button, .home-donate button {
+    margin-top: 35%; } }
 .news-header {
   padding-top: 3em;
   padding-bottom: 1.5em;
